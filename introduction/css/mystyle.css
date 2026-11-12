@@ -3,13 +3,13 @@ body {
     padding: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #fcf4f7;
-    color: #5c434b; 
+    color: #5c434b;
     line-height: 1.6;
 }
 
 header {
-    background-color: #ebdbe0; 
-    color: #7a5c65; 
+    background-color: #ebdbe0;
+    color: #7a5c65;
     text-align: center;
     padding: 2.5rem 0; 
     box-shadow: 0 2px 10px rgba(0,0,0,0.05);
@@ -22,7 +22,6 @@ header h1 {
     text-transform: uppercase;
 }
 
-
 main {
     max-width: 900px;
     margin: 40px auto; 
@@ -30,11 +29,15 @@ main {
     background-color: #ffffff; 
     border-radius: 15px;
     box-shadow: 0 8px 20px rgba(220, 195, 205, 0.4); 
-    display: flex; 
-    align-items: center;
-    gap: 40px;
 }
 
+
+.profile-container {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 50px; 
+}
 
 .profile-left {
     flex: 1;
@@ -60,7 +63,6 @@ h2 {
     font-size: 1.8rem;
 }
 
-
 .profile-right {
     flex: 2;
 }
@@ -74,21 +76,14 @@ h2 {
     gap: 15px; 
 }
 
-
 .info-list li {
     background-color: #fcf4f7;
     padding: 15px 20px;
     border-radius: 10px; 
-    border-left: 5px solid #d4b4c0;
+    border-left: 5px solid #d4b4c0; 
     display: flex;
     align-items: center;
     font-size: 0.95rem;
-    transition: transform 0.2s ease;
-}
-
-.info-list li:hover {
-    transform: translateX(5px);
-    background-color: #faebf1;
 }
 
 .info-list strong {
@@ -97,4 +92,46 @@ h2 {
     text-transform: uppercase;
     font-size: 0.85rem;
     letter-spacing: 0.5px;
+}
+
+
+.wrap-demo {
+    width: 100%;
+    border-top: 2px dashed #ebdbe0;
+    padding-top: 30px;
+}
+
+h2.wrap-title {
+    color: black;
+    text-align: left;
+    border-bottom: none;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 24px;
+    margin-bottom: 10px;
+    margin-top: 0;
+}
+
+.wrap-demo p {
+    color: black;
+    margin-bottom: 10px;
+    font-family: "Times New Roman", Times, serif;
+}
+
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: DodgerBlue;
+    padding: 10px;
+}
+
+
+.flex-container > div {
+    background-color: #f1f1f1;
+    width: 80px;
+    margin: 10px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 20px;
+    color: black;
 }
