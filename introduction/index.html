@@ -1,82 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Personal Profile - Ssel</title>
+    <link rel="stylesheet" href="css/mystyle.css">
+</head>
+<body>
+    <header>
+        <h1>Personal Profile</h1>
+    </header>
 
-body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #fdf2f8; /* Very soft background pink */
-    color: #4a4a4a; /* Soft dark gray text so it is easy to read */
-    line-height: 1.6;
-}
+    <main>
+        <img src="profile.jpg" alt="Profile Picture" class="profile-pic">
 
-header {
-    background: linear-gradient(90deg, #fbcfe8, #f9a8d4); /* Gentle pink gradient */
-    color: #831843; /* Deep pink text */
-    text-align: center;
-    padding: 3rem 0 4rem 0; /* Extra padding at the bottom */
-    box-shadow: 0 4px 10px rgba(249, 168, 212, 0.3);
-}
-
-header h1 {
-    margin: 0;
-    font-size: 2.5rem;
-    letter-spacing: 1px;
-}
-
-main {
-    max-width: 650px;
-    margin: -50px auto 3rem auto; /* Pulls the white card up into the header */
-    padding: 30px 40px;
-    background-color: #ffffff; /* Clean white card */
-    border-radius: 20px;
-    box-shadow: 0 10px 25px rgba(244, 114, 182, 0.15); /* Soft pink shadow */
-}
-
-.profile-pic {
-    display: block;
-    margin: -90px auto 20px auto; /* Pops the picture out the top of the white box */
-    width: 160px; 
-    height: 160px;
-    border-radius: 50%;
-    border: 6px solid #ffffff;
-    box-shadow: 0 8px 16px rgba(249, 168, 212, 0.4);
-    object-fit: cover;
-    transition: transform 0.3s ease;
-}
-
-.profile-pic:hover {
-    transform: translateY(-5px) scale(1.03); /* Slight float effect on hover */
-}
-
-h2 {
-    text-align: center;
-    color: #db2777; 
-    border-bottom: 2px dashed #fbcfe8;
-    padding-bottom: 10px;
-    margin-top: 0;
-}
-
-.info-list {
-    list-style: none;
-    padding: 0;
-    margin: 20px 0 0 0;
-}
-
-.info-list li {
-    background-color: #fff1f2; /* Ultra light rose block */
-    margin-bottom: 12px;
-    padding: 15px 20px;
-    border-radius: 12px;
-    border-left: 5px solid #f472b6; /* Pink accent line on the left */
-    transition: background-color 0.3s ease, transform 0.2s ease;
-}
-
-.info-list li:hover {
-    background-color: #fce7f3; /* Darkens slightly on hover */
-    transform: translateX(5px); /* Slides slightly right on hover */
-}
-
-.info-list strong {
-    color: #be185d; /* Dark pink for the labels */
-    display: inline-block;
-    width: 140px; /* Lines up all the text neatly */
-}
+        <h2>About Me</h2>
+        
+        <ul class="info-list">
+            <li><strong>Name:</strong> Rassel Mendoza</li>
+            <li><strong>Education:</strong> Asia Pacific College</li>
+            <li><strong>Course:</strong> BS Computer Science</li>
+            <li><strong>IT Experience:</strong> VS Code, Linux, Java, JavaScript, Web Programming</li>
+            <li><strong>Hobbies:</strong> Gaming, Biking, Crafting</li>
+            <li><strong>Dream:</strong> To excel in computer science and cyber forensics</li>
+        </ul>
+    </main>
+</body>
+</html>
