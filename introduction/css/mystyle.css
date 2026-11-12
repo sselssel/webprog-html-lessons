@@ -22,14 +22,13 @@ header h1 {
 }
 
 main {
-    max-width: 650px;
+    max-width: 700px;
     margin: -50px auto 3rem auto; 
     padding: 30px 40px;
     background-color: #ffffff; 
     border-radius: 20px;
     box-shadow: 0 10px 25px rgba(244, 114, 182, 0.15); 
 }
-
 
 .profile-pic {
     display: block;
@@ -59,25 +58,42 @@ h2 {
 .info-list {
     list-style: none;
     padding: 0;
-    margin: 20px 0 0 0;
+    margin: 30px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px; 
 }
+
 
 .info-list li {
-    background-color: #fff1f2; 
-    margin-bottom: 12px;
-    padding: 15px 20px;
-    border-radius: 12px;
-    border-left: 5px solid #f472b6; 
-    transition: background-color 0.3s ease, transform 0.2s ease;
+    background: linear-gradient(135deg, #fff1f2, #fce7f3);
+    padding: 12px 20px;
+    border-radius: 50px; 
+    border: 1px solid #fbcfe8;
+    box-shadow: 0 4px 10px rgba(244, 114, 182, 0.1);
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease;
+    font-size: 0.95rem;
 }
 
+
 .info-list li:hover {
-    background-color: #fce7f3; 
-    transform: translateX(5px); 
+    transform: translateY(-3px) scale(1.02);
+    box-shadow: 0 6px 15px rgba(244, 114, 182, 0.2);
+    background: linear-gradient(135deg, #fce7f3, #fbcfe8);
 }
 
 .info-list strong {
-    color: #be185d; 
-    display: inline-block;
-    width: 140px; 
+    background-color: #f472b6;
+    color: white;
+    padding: 6px 15px;
+    border-radius: 20px;
+    margin-right: 15px;
+    font-size: 0.85rem;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    min-width: 110px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(244, 114, 182, 0.3);
 }
