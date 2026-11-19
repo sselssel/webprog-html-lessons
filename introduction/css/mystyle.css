@@ -7,19 +7,37 @@ body {
     line-height: 1.5;
 }
 
-header {
+
+.flex-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
     background-color: #ebdbe0;
     color: #7a5c65;
-    text-align: center;
-    padding: 2rem 0;
+    padding: 1.5rem 2.5rem;
     box-shadow: 0 2px 10px rgba(0,0,0,0.05);
 }
 
-header h1 {
+.flex-header h1 {
     margin: 0;
-    font-size: 2rem;
+    font-size: 1.8rem;
     letter-spacing: 2px;
     text-transform: uppercase;
+}
+
+.flex-nav {
+    display: flex;
+    gap: 15px;
+}
+
+.flex-nav a {
+    text-decoration: none;
+    color: #7a5c65;
+    font-weight: 600;
+    padding: 6px 12px;
+    border-radius: 6px;
+    background-color: #fcf4f7;
 }
 
 main {
@@ -31,10 +49,13 @@ main {
     box-shadow: 0 8px 20px rgba(220, 195, 205, 0.4);
 }
 
+/* CSS Grid Container */
 .grid-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
     border: 2px solid #1e88e5;
+    padding: 12px;
     background-color: #f2f2f2;
 }
 
@@ -43,10 +64,14 @@ main {
     padding: 16px;
     text-align: center;
     background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .grid-item h3 {
-    margin: 0 0 8px 0;
+    margin: 0 0 10px 0;
     font-size: 1rem;
     color: #5c434b;
 }
@@ -57,10 +82,25 @@ main {
     color: #333333;
 }
 
-.photo-cell {
+
+.flex-tags {
     display: flex;
-    align-items: center;
+    flex-wrap: wrap;
     justify-content: center;
+    gap: 8px;
+}
+
+.flex-tags span {
+    background-color: #ebdbe0;
+    color: #5c434b;
+    padding: 5px 10px;
+    border-radius: 12px;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.photo-cell {
+    grid-column: span 3;
 }
 
 .profile-pic {
@@ -74,5 +114,9 @@ main {
 @media (max-width: 700px) {
     .grid-container {
         grid-template-columns: 1fr;
+    }
+
+    .photo-cell {
+        grid-column: span 1;
     }
 }
