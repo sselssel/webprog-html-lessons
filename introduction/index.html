@@ -2,16 +2,21 @@
 <html>
 <head>
     <title>Personal Profile - Ssel</title>
-    <link rel="stylesheet" href="css/mystyle.css?v=7">
+    <link rel="stylesheet" href="css/mystyle.css?v=8">
 </head>
 <body>
-    <header>
+    <header class="flex-header">
         <h1>Personal Profile</h1>
+        <nav class="flex-nav">
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#goals">Goals</a>
+        </nav>
     </header>
 
     <main>
         <div class="grid-container">
-            <div class="grid-item">
+            <div class="grid-item" id="about">
                 <h3>1 About Me</h3>
                 <p><strong>Name:</strong> Rassel Mendoza</p>
             </div>
@@ -26,23 +31,29 @@
                 <p>BS Computer Science</p>
             </div>
 
-            <div class="grid-item">
-                <h3>4 IT Experience</h3>
-                <p>VS Code, Linux, Java, Web Programming</p>
+            <div class="grid-item" id="skills">
+                <h3>4 IT Experience (Flexbox Tags)</h3>
+                <div class="flex-tags">
+                    <span>VS Code</span>
+                    <span>Linux</span>
+                    <span>Java</span>
+                    <span>Web Programming</span>
+                </div>
             </div>
 
             <div class="grid-item">
-                <h3>5 Hobbies</h3>
-                <p>Gaming, Biking, Crafting</p>
+                <h3>5 Hobbies (Flexbox Tags)</h3>
+                <div class="flex-tags">
+                    <span>Gaming</span>
+                    <span>Biking</span>
+                    <span>Crafting</span>
+                </div>
             </div>
 
-            <div class="grid-item">
+            <div class="grid-item" id="goals">
                 <h3>6 Dream</h3>
                 <p>Excel in computer science and cyber forensics</p>
             </div>
-
-            <div class="grid-item">7</div>
-            <div class="grid-item">8</div>
 
             <div class="grid-item photo-cell">
                 <img src="profile.jpg" alt="Profile Picture" class="profile-pic">
