@@ -142,7 +142,6 @@ h2.wrap-title {
     color: black;
 }
 
-
 @media (max-width: 768px) {
     main {
         margin: 20px 15px;
@@ -174,7 +173,6 @@ h2.wrap-title {
         min-width: auto;
     }
 }
-
 
 @media (max-width: 480px) {
     header {
