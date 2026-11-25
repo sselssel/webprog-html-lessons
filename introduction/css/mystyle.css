@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -5,13 +9,14 @@ body {
     background-color: #fcf4f7;
     color: #5c434b;
     line-height: 1.6;
+    overflow-x: hidden;
 }
 
 header {
     background-color: #ebdbe0;
     color: #7a5c65;
     text-align: center;
-    padding: 2.5rem 0; 
+    padding: 2.5rem 1rem;
     box-shadow: 0 2px 10px rgba(0,0,0,0.05);
 }
 
@@ -24,19 +29,18 @@ header h1 {
 
 main {
     max-width: 900px;
-    margin: 40px auto; 
+    margin: 40px auto;
     padding: 40px;
-    background-color: #ffffff; 
+    background-color: #ffffff;
     border-radius: 15px;
-    box-shadow: 0 8px 20px rgba(220, 195, 205, 0.4); 
+    box-shadow: 0 8px 20px rgba(220, 195, 205, 0.4);
 }
-
 
 .profile-container {
     display: flex;
     align-items: center;
     gap: 40px;
-    margin-bottom: 50px; 
+    margin-bottom: 50px;
 }
 
 .profile-left {
@@ -48,7 +52,8 @@ main {
 }
 
 .profile-pic {
-    width: 220px; 
+    width: 220px;
+    max-width: 100%;
     height: 220px;
     border-radius: 50%;
     border: 5px solid #ebdbe0;
@@ -57,7 +62,7 @@ main {
 }
 
 h2 {
-    color: #9c7885; 
+    color: #9c7885;
     margin-top: 20px;
     margin-bottom: 0;
     font-size: 1.8rem;
@@ -65,6 +70,7 @@ h2 {
 
 .profile-right {
     flex: 2;
+    min-width: 0;
 }
 
 .info-list {
@@ -73,27 +79,29 @@ h2 {
     margin: 0;
     display: flex;
     flex-direction: column;
-    gap: 15px; 
+    gap: 15px;
 }
 
 .info-list li {
     background-color: #fcf4f7;
     padding: 15px 20px;
-    border-radius: 10px; 
-    border-left: 5px solid #d4b4c0; 
+    border-radius: 10px;
+    border-left: 5px solid #d4b4c0;
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
+    gap: 6px;
     font-size: 0.95rem;
+    overflow-wrap: anywhere;
 }
 
 .info-list strong {
-    color: #7a5c65; 
+    color: #7a5c65;
     min-width: 120px;
     text-transform: uppercase;
     font-size: 0.85rem;
     letter-spacing: 0.5px;
 }
-
 
 .wrap-demo {
     width: 100%;
@@ -117,14 +125,12 @@ h2.wrap-title {
     font-family: "Times New Roman", Times, serif;
 }
 
-
 .flex-container {
     display: flex;
     flex-wrap: wrap;
     background-color: DodgerBlue;
     padding: 10px;
 }
-
 
 .flex-container > div {
     background-color: #f1f1f1;
@@ -134,4 +140,69 @@ h2.wrap-title {
     line-height: 50px;
     font-size: 20px;
     color: black;
+}
+
+
+@media (max-width: 768px) {
+    main {
+        margin: 20px 15px;
+        padding: 25px 20px;
+    }
+
+    header h1 {
+        font-size: 1.7rem;
+    }
+
+    .profile-container {
+        flex-direction: column;
+        gap: 25px;
+        margin-bottom: 35px;
+        text-align: center;
+    }
+
+    .profile-right {
+        width: 100%;
+    }
+
+    .info-list li {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 12px 15px;
+    }
+
+    .info-list strong {
+        min-width: auto;
+    }
+}
+
+
+@media (max-width: 480px) {
+    header {
+        padding: 1.8rem 1rem;
+    }
+
+    header h1 {
+        font-size: 1.4rem;
+        letter-spacing: 1px;
+    }
+
+    main {
+        margin: 12px 10px;
+        padding: 18px 14px;
+        border-radius: 10px;
+    }
+
+    .profile-pic {
+        width: 160px;
+        height: 160px;
+    }
+
+    h2 {
+        font-size: 1.4rem;
+    }
+
+    .flex-container > div {
+        flex: 1 1 60px;
+        margin: 6px;
+    }
 }
