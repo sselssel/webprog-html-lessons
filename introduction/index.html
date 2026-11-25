@@ -5,36 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Profile - Ssel</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="css/mystyle.css?v=7">
 </head>
 <body>
-    <div class="container-fluid mt-3">
-        <h1>Personal Profile Web page of Rassel Mendoza</h1>
-        <h2>About Me</h2>
-        <p>Name: Rassel Mendoza</p>
+    <header>
+        <h1>Personal Profile</h1>
+    </header>
 
-        <div class="row mb-2">
-            <div class="col-md bg-primary text-white p-2">
-                <div>1 of 2 Education / Achievements</div>
-                <div>Course: BS Computer Science</div>
-                <div>School: Asia Pacific College</div>
+    <main class="container my-4">
+        <div class="row align-items-center">
+            <div class="col-md-4 text-center mb-3 mb-md-0">
+                <img src="profile.jpg" alt="Profile Picture" class="profile-pic img-fluid">
+                <h2 class="mt-3">About Me</h2>
             </div>
-            <div class="col-md bg-dark text-white p-2">
-                <div>2 of 2 IT Experience</div>
-                <div>VS Code, Linux, Java, Web Programming</div>
+
+            <div class="col-md-8">
+                <ul class="info-list">
+                    <li><strong>Name:</strong> Rassel Mendoza</li>
+                    <li><strong>Education:</strong> Asia Pacific College</li>
+                    <li><strong>Course:</strong> BS Computer Science</li>
+                    <li><strong>IT Experience:</strong> VS Code, Linux, Java, Web Programming</li>
+                    <li><strong>Hobbies:</strong> Gaming, Biking, Crafting</li>
+                    <li><strong>Dream:</strong> Excel in computer science and cyber forensics</li>
+                </ul>
             </div>
         </div>
+    </main>
 
-        <div class="row mb-3">
-            <div class="col-md bg-primary text-white p-2">1 of 4</div>
-            <div class="col-md bg-dark text-white p-2">2 of 4</div>
-            <div class="col-md bg-primary text-white p-2">3 of 4</div>
-            <div class="col-md bg-dark text-white p-2">4 of 4</div>
-        </div>
-
-        <p><strong>Hobbies:</strong> Gaming, Biking, Crafting</p>
-        <p><strong>Dream:</strong> Excel in computer science and cyber forensics</p>
-        <img src="profile.jpg" alt="Profile Picture" class="img-fluid" style="max-width: 250px;">
-    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
